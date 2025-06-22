@@ -1,0 +1,1257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.jpeg" alt="sahil Vishwakarma" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="sahil Vishwakarma">Sahil Vishwakarma</h1>
+
+          <p class="title">Software Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+     <div class="sidebar-info_more">
+
+  <div class="separator"></div>
+
+  <ul class="contacts-list">
+
+    <li class="contact-item">
+      <div class="icon-box">
+        <ion-icon name="mail-outline"></ion-icon>
+      </div>
+      <div class="contact-info">
+        <p class="contact-title">Email</p>
+        <a href="mailto:vsahil79222@gmail.com" class="contact-link">vsahil79222@gmail.com</a>
+      </div>
+    </li>
+
+    <li class="contact-item">
+      <div class="icon-box">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+      </div>
+      <div class="contact-info">
+        <p class="contact-title">Phone</p>
+        <a href="tel:+919028938995" class="contact-link">+91 9028938995</a>
+      </div>
+    </li>
+
+    <li class="contact-item">
+      <div class="icon-box">
+        <ion-icon name="location-outline"></ion-icon>
+      </div>
+      <div class="contact-info">
+        <p class="contact-title">Location</p>
+        <address>Mumbai, India</address>
+      </div>
+    </li>
+
+  </ul>
+
+  <div class="separator"></div>
+
+  <ul class="social-list">
+
+    <li class="social-item">
+      <a href="https://www.linkedin.com/in/sahil-v-8611161a1/" class="social-link" target="_blank">
+        <ion-icon name="logo-linkedin"></ion-icon>
+      </a>
+    </li>
+
+    <li class="social-item">
+      <a href="https://github.com/sahilvishwakarma79222" class="social-link" target="_blank">
+        <ion-icon name="logo-github"></ion-icon>
+      </a>
+    </li>
+
+    <li class="social-item">
+      <a href="https://leetcode.com/u/sahilvishwakarma/" class="social-link" target="_blank">
+        <img src="assets/images/leetcode.png" alt="LeetCode" width="20" height="20" style="margin-top: 2px;" />
+      </a>
+    </li>
+
+  </ul>
+
+</div>
+
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+  <p>
+    I'm a Java Backend Developer with a passion for building clean, scalable, and efficient backend systems.
+    I enjoy transforming complex business logic into simple, maintainable code using modern backend technologies.
+  </p>
+
+  <p>
+    My role is to design and develop robust REST APIs, optimize performance, and ensure seamless integration between systems.
+    I focus on writing well-structured code using Java, Spring Boot, Hibernate, and JPA. I'm committed to continuous learning,
+    improving backend architecture, and solving real-world problems through reliable software solutions.
+    My work powers live production systems that actively support business operations.
+  </p>
+</section>
+
+
+
+        <!--
+          - service
+        -->
+
+        <!-- <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make high-quality photos of any category at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section> -->
+
+        <section class="service">
+
+  <h3 class="h3 service-title">What I'm Doing</h3>
+
+  <ul class="service-list">
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/api.png" alt="API development icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">REST API Development</h4>
+      <p class="service-item-text">
+  Building secure, high-performance RESTful APIs using Spring Boot and Java, with clean architecture and efficient data handling.
+</p>
+
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/database.png" alt="Database icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Database Design & Integration</h4>
+     <p class="service-item-text">
+  Designing efficient relational database schemas and integrating them smoothly with Spring Boot using JPA and Hibernate.
+</p>
+
+
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/performance.png" alt="Performance icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Performance Optimization</h4>
+       <p class="service-item-text">
+  Improving performance through optimized queries, clean code refactoring, and efficient architectural design.
+</p>
+
+      </div>
+    </li>
+
+    <li class="service-item">
+      <div class="service-icon-box">
+        <img src="./assets/images/security.png" alt="Security icon" width="40">
+      </div>
+      <div class="service-content-box">
+        <h4 class="h4 service-item-title">Security</h4>
+        <p class="service-item-text">
+  Implementing secure coding standards, managing authentication and authorization, and maintaining clean architecture.
+</p>
+
+      </div>
+    </li>
+
+  </ul>
+
+</section>
+
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Testimonials</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/search.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>What I’m Looking For</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I aim to work on challenging backend systems where I can leverage my Java and Spring Boot expertise 
+    to build scalable, secure, and efficient applications. Passionate about continuous learning and
+    adopting best practices in software engineering.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/approach.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>My Work Approach</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                   <p>
+    I believe in writing clean, maintainable code that scales well and performs efficiently under pressure.
+    Collaboration and continuous improvement are key values I follow to deliver robust backend solutions.
+  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                    lot of experience
+                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                    consectetur adipiscing
+                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+  <li class="timeline-item">
+    <h4 class="h4 timeline-item-title">Smt. Chandibai Himathmal Mansukhani College</h4>
+    <span>201-2021</span>
+    <p class="timeline-text">
+      B.S.C in Computer Science, CGPA: 8.38
+    </p>
+  </li>
+
+  <li class="timeline-item">
+    <h4 class="h4 timeline-item-title">S.I.C.E.S Jr College of Arts Science Commerce</h4>
+    <span>2018</span>
+    <p class="timeline-text">
+      Class XII, 67.38%
+    </p>
+  </li>
+
+  <li class="timeline-item">
+    <h4 class="h4 timeline-item-title">Shastri Hindi Vidyalaya</h4>
+    <span>2016</span>
+    <p class="timeline-text">
+      Class X, 86.40%
+    </p>
+  </li>
+
+</ol>
+
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+  <li class="timeline-item">
+    <h4 class="h4 timeline-item-title">Software Engineer - Java</h4>
+    <span>June 2025 – Present | Lnv Digital Systems, Mumbai</span>
+    <p class="timeline-text">
+      Technologies: Java, SQL, MySQL, Spring Boot, GitHub<br>
+      • Developed ERP software for the metal industry with focus on multi-user authentication, authorization, and OTP-based login.<br>
+      • Managed MVC architecture and optimized reporting modules.<br>
+      • Led migration of legacy PHP ERP system to modern Java MVC solution, enhancing performance and scalability.<br>
+      • Improved backend performance for faster data processing and smoother user experience.
+    </p>
+  </li>
+
+  <li class="timeline-item">
+    <h4 class="h4 timeline-item-title">Software Engineer - Java (Intern, Full-Time)</h4>
+    <span>Aug 2023 – Feb 2024 | Lnv Digital Systems, Mumbai</span>
+    <p class="timeline-text">
+      Technologies: Java, SQL, MySQL Workbench, Spring Boot, GitHub<br>
+      • Designed and developed backend for Personal Assessment Test application with JWT authentication.<br>
+      • Implemented MVC architecture and optimized database interactions for improved system performance.<br>
+      • Developed backend for Facebook-like social platform ensuring scalability and robustness.
+    </p>
+  </li>
+
+  <li class="timeline-item">
+    <h4 class="h4 timeline-item-title">Java Developer - Intern</h4>
+    <span>Nov 2022 – Dec 2022 | Dezignolics Web And Software Company, Mumbai</span>
+    <p class="timeline-text">
+      Technologies: Java, HTML, CSS, JavaScript, MySQL<br>
+      • Developed Hospital Management System using Java Servlets and JSP.<br>
+      • Automated patient management and administrative tasks with backend development and database integration.
+    </p>
+  </li>
+
+</ol>
+
+
+        </section>
+
+        <section class="skill">
+<ul class="skills-list content-card">
+
+  <li class="skills-item">
+    <div class="title-wrapper">
+      <h5 class="h5">Java (Core & Advanced)</h5>
+      <data value="90">90%</data>
+    </div>
+    <div class="skill-progress-bg">
+      <div class="skill-progress-fill" style="width: 90%;"></div>
+    </div>
+  </li>
+
+  <li class="skills-item">
+    <div class="title-wrapper">
+      <h5 class="h5">SQL & MySQL (Database Management)</h5>
+      <data value="85">85%</data>
+    </div>
+    <div class="skill-progress-bg">
+      <div class="skill-progress-fill" style="width: 85%;"></div>
+    </div>
+  </li>
+
+  <li class="skills-item">
+    <div class="title-wrapper">
+      <h5 class="h5">Spring Boot (REST API, MVC Architecture)</h5>
+      <data value="80">80%</data>
+    </div>
+    <div class="skill-progress-bg">
+      <div class="skill-progress-fill" style="width: 80%;"></div>
+    </div>
+  </li>
+
+  <li class="skills-item">
+    <div class="title-wrapper">
+      <h5 class="h5">JPA & Hibernate (ORM, Database Mapping)</h5>
+      <data value="75">75%</data>
+    </div>
+    <div class="skill-progress-bg">
+      <div class="skill-progress-fill" style="width: 75%;"></div>
+    </div>
+  </li>
+
+  <li class="skills-item">
+    <div class="title-wrapper">
+      <h5 class="h5">Spring Security (JWT Authentication & Authorization)</h5>
+      <data value="70">70%</data>
+    </div>
+    <div class="skill-progress-bg">
+      <div class="skill-progress-fill" style="width: 70%;"></div>
+    </div>
+  </li>
+
+  <li class="skills-item">
+    <div class="title-wrapper">
+      <h5 class="h5">Java Fundamentals (OOP, Collections, Streams, Multithreading)</h5>
+      <data value="90">90%</data>
+    </div>
+    <div class="skill-progress-bg">
+      <div class="skill-progress-fill" style="width: 90%;"></div>
+    </div>
+  </li>
+
+  <li class="skills-item">
+    <div class="title-wrapper">
+      <h5 class="h5">Postman (API Testing & Validation)</h5>
+      <data value="75">75%</data>
+    </div>
+    <div class="skill-progress-bg">
+      <div class="skill-progress-fill" style="width: 75%;"></div>
+    </div>
+  </li>
+
+</ul>
+
+
+
+
+
+  </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web design</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web design</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Finance</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Orizon</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="fundo" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Fundo</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-4.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Brawlhalla</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-5.png" alt="dsm." loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DSM.</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-6.png" alt="metaspark" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">MetaSpark</h3>
+
+                <p class="project-category">Web design</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-7.png" alt="summary" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Summary</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="applications">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-8.jpg" alt="task manager" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Task Manager</h3>
+
+                <p class="project-category">Applications</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web development">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-9.png" alt="arrival" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Arrival</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+      <header>
+    <h2 class="h2 article-title">Technical Projects</h2>
+  </header>
+
+   <section class="project-posts">
+    <ul class="project-posts-list" style="
+      list-style: none;
+      padding: 0;
+      display: grid;
+      gap: 1.5rem;
+    ">
+
+      <!-- Project 1 -->
+      <li class="project-post-item" style="
+        background: #1e1e1e;
+        border-radius: 10px;
+        padding: 1.5rem;
+        border: 1px solid #2d2d2d;
+        transition: all 0.3s ease;
+      ">
+        <div class="project-content">
+          <h3 class="h3 project-item-title" style="
+            color: #3a86ff;
+            margin-top: 0;
+            font-size: 1.3rem;
+            font-weight: 500;
+          ">Personal Assessment Test Platform (Spring Boot)</h3>
+          <p class="project-text" style="
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+          ">
+            Designed and implemented a full-featured backend system for psychological assessment testing.
+          </p>
+          <ul class="project-text" style="
+            color: #c0c0c0;
+            padding-left: 1.2rem;
+            line-height: 1.6;
+            margin: 0;
+          ">
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #3a86ff;">•</span>
+              JWT-based authentication system with role-based access control
+            </li>
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #3a86ff;">•</span>
+              Optimized REST API following MVC architectural patterns
+            </li>
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #3a86ff;">•</span>
+              Performance tuning achieving 40% reduction in query response times
+            </li>
+            <li style="position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #3a86ff;">•</span>
+              Comprehensive test suite covering 90% of business logic
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Project 2 -->
+      <li class="project-post-item" style="
+        background: #1e1e1e;
+        border-radius: 10px;
+        padding: 1.5rem;
+        border: 1px solid #2d2d2d;
+        transition: all 0.3s ease;
+      ">
+        <div class="project-content">
+          <h3 class="h3 project-item-title" style="
+            color: #ff6b6b;
+            margin-top: 0;
+            font-size: 1.3rem;
+            font-weight: 500;
+          ">Social Media Platform Backend (Internship Project)</h3>
+          <p class="project-text" style="
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+          ">
+            Developed core backend infrastructure for a scalable social networking service.
+          </p>
+          <ul class="project-text" style="
+            color: #c0c0c0;
+            padding-left: 1.2rem;
+            line-height: 1.6;
+            margin: 0;
+          ">
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #ff6b6b;">•</span>
+              User relationship graph implementation for friend networks
+            </li>
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #ff6b6b;">•</span>
+              Activity feed generation with optimized database queries
+            </li>
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #ff6b6b;">•</span>
+              Content moderation system with reporting workflows
+            </li>
+            <li style="position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #ff6b6b;">•</span>
+              Horizontal scaling design supporting 10,000+ concurrent users
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Project 3 -->
+      <li class="project-post-item" style="
+        background: #1e1e1e;
+        border-radius: 10px;
+        padding: 1.5rem;
+        border: 1px solid #2d2d2d;
+        transition: all 0.3s ease;
+      ">
+        <div class="project-content">
+          <h3 class="h3 project-item-title" style="
+            color: #4ecdc4;
+            margin-top: 0;
+            font-size: 1.3rem;
+            font-weight: 500;
+          ">Metal Industry ERP System</h3>
+          <p class="project-text" style="
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+          ">
+            Enterprise resource planning solution tailored for manufacturing operations.
+          </p>
+          <ul class="project-text" style="
+            color: #c0c0c0;
+            padding-left: 1.2rem;
+            line-height: 1.6;
+            margin: 0;
+          ">
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #4ecdc4;">•</span>
+              Multi-factor authentication with OTP and role-based permissions
+            </li>
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #4ecdc4;">•</span>
+              Inventory management with real-time tracking
+            </li>
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #4ecdc4;">•</span>
+              Custom reporting engine with data validation
+            </li>
+            <li style="position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #4ecdc4;">•</span>
+              Integration with third-party logistics APIs
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!-- Project 4 -->
+      <li class="project-post-item" style="
+        background: #1e1e1e;
+        border-radius: 10px;
+        padding: 1.5rem;
+        border: 1px solid #2d2d2d;
+        transition: all 0.3s ease;
+      ">
+        <div class="project-content">
+          <h3 class="h3 project-item-title" style="
+            color: #a78bfa;
+            margin-top: 0;
+            font-size: 1.3rem;
+            font-weight: 500;
+          ">Legacy System Modernization</h3>
+          <p class="project-text" style="
+            color: #b0b0b0;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+          ">
+            Migration and optimization of decade-old PHP ERP to modern Java stack.
+          </p>
+          <ul class="project-text" style="
+            color: #c0c0c0;
+            padding-left: 1.2rem;
+            line-height: 1.6;
+            margin: 0;
+          ">
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #a78bfa;">•</span>
+              Re-engineered business logic into modular Spring Boot services
+            </li>
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #a78bfa;">•</span>
+              Implemented caching layer reducing database load by 60%
+            </li>
+            <li style="margin-bottom: 0.5rem; position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #a78bfa;">•</span>
+              Developed comprehensive API documentation
+            </li>
+            <li style="position: relative; padding-left: 1.2rem;">
+              <span style="position: absolute; left: 0; color: #a78bfa;">•</span>
+              Established CI/CD pipeline for automated deployments
+            </li>
+          </ul>
+        </div>
+      </li>
+
+    </ul>
+  </section>
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+       <section class="mapbox" data-mapbox>
+  <figure>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24170.794799625746!2d72.8155239168582!3d19.01761409372882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce2f4c32b7e5%3A0x7a5eaee999bcece4!2sMumbai%2C%20Maharashtra%2C%20India!5e0!3m2!1sen!2sin!4v1686260000000!5m2!1sen!2sin"
+      width="400" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </figure>
+</section>
+
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
